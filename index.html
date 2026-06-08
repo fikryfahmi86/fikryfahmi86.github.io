@@ -15,16 +15,17 @@ box-sizing:border-box;
 }
 
 body{
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 background:#020617;
-background-image:
-radial-gradient(circle at top right,#1e40af 0%,transparent 35%),
-radial-gradient(circle at bottom left,#2563eb 0%,transparent 25%);
+background:
+radial-gradient(circle at top right,#1d4ed8 0%,transparent 35%),
+radial-gradient(circle at bottom left,#2563eb 0%,transparent 25%),
+#020617;
 min-height:100vh;
 display:flex;
+flex-direction:column;
 justify-content:center;
 align-items:center;
-flex-direction:column;
 padding:20px;
 color:white;
 overflow:hidden;
@@ -32,38 +33,43 @@ overflow:hidden;
 
 .card{
 width:100%;
-max-width:900px;
-padding:70px 40px;
-border-radius:30px;
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(15px);
-border:1px solid rgba(255,255,255,.12);
+max-width:950px;
+padding:80px 50px;
 text-align:center;
-box-shadow:0 20px 60px rgba(0,0,0,.4);
+border-radius:32px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.08);
+box-shadow:
+0 25px 80px rgba(0,0,0,.5),
+0 0 40px rgba(37,99,235,.15);
 }
 
 h1{
-font-size:clamp(3rem,8vw,6rem);
+font-size:clamp(3.2rem,8vw,6.5rem);
 font-weight:900;
-line-height:1.05;
-margin-bottom:20px;
-letter-spacing:1px;
+line-height:1;
+letter-spacing:2px;
+margin-bottom:25px;
+text-transform:uppercase;
 }
 
-.line{
-width:90px;
+.accent{
+width:100px;
 height:4px;
+margin:0 auto 35px;
+border-radius:20px;
 background:#3b82f6;
-border-radius:10px;
-margin:25px auto;
 box-shadow:0 0 20px #3b82f6;
 }
 
 .subtitle{
-font-size:1.25rem;
+font-size:1.2rem;
 color:#cbd5e1;
 line-height:1.8;
-margin-bottom:40px;
+max-width:600px;
+margin:auto;
+margin-bottom:50px;
 }
 
 .buttons{
@@ -74,46 +80,43 @@ flex-wrap:wrap;
 }
 
 .btn{
-text-decoration:none;
-padding:18px 36px;
+padding:18px 38px;
 border-radius:14px;
-font-weight:700;
+text-decoration:none;
 font-size:1.05rem;
+font-weight:700;
 transition:.3s;
+min-width:220px;
 }
 
 .btn:hover{
-transform:translateY(-3px);
+transform:translateY(-4px);
 }
 
 .email{
 background:#2563eb;
 color:white;
+box-shadow:0 10px 30px rgba(37,99,235,.4);
 }
 
 .whatsapp{
 background:#22c55e;
 color:white;
-}
-
-.email-address{
-margin-top:40px;
-font-size:1.2rem;
-color:#cbd5e1;
+box-shadow:0 10px 30px rgba(34,197,94,.35);
 }
 
 .footer{
-margin-top:40px;
-font-size:1rem;
+margin-top:45px;
 color:#94a3b8;
-text-align:center;
+font-size:.95rem;
 letter-spacing:1px;
+text-align:center;
 }
 
 @media(max-width:768px){
 
 .card{
-padding:50px 25px;
+padding:60px 25px;
 }
 
 .subtitle{
@@ -122,11 +125,11 @@ font-size:1rem;
 
 .btn{
 width:100%;
-max-width:280px;
+max-width:300px;
 }
 
 .footer{
-font-size:.85rem;
+font-size:.8rem;
 }
 
 }
@@ -143,10 +146,10 @@ MOHD FIKRY FAHMI<br>
 OMAR
 </h1>
 
-<div class="line"></div>
+<div class="accent"></div>
 
 <div class="subtitle">
-Hubungi saya melalui email atau WhatsApp<br>
+Hubungi saya melalui email atau WhatsApp
 untuk sebarang urusan.
 </div>
 
@@ -162,10 +165,6 @@ untuk sebarang urusan.
 
 </div>
 
-<div class="email-address">
-ff@fikryfahmi.my
-</div>
-
 </div>
 
 <div class="footer">
@@ -173,4 +172,4 @@ ff@fikryfahmi.my
 </div>
 
 </body>
-</html>v
+</html>
