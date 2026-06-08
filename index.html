@@ -4,120 +4,89 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MOHD FIKRY FAHMI BIN OMAR</title>
+<title>MOHD FIKRY FAHMI OMAR</title>
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-background:#0f172a;
-background-image:
-radial-gradient(circle at top right,#1e3a8a 0%,transparent 35%),
-radial-gradient(circle at bottom left,#0ea5e9 0%,transparent 30%);
-color:white;
-min-height:100vh;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
-}
-
-.hero{
-text-align:center;
-padding:80px 20px;
-}
-
-.hero h1{
-font-size:clamp(2.5rem,6vw,5rem);
-font-weight:800;
-line-height:1.1;
-margin-bottom:20px;
-}
-
-.location{
-font-size:1.2rem;
-color:#cbd5e1;
-margin-bottom:30px;
-}
-
-.tagline{
-font-size:1.15rem;
-color:#94a3b8;
-max-width:700px;
-margin:auto;
-line-height:1.8;
-}
-
-.buttons{
-display:flex;
-justify-content:center;
-gap:20px;
-margin-top:40px;
-flex-wrap:wrap;
-}
-
-.btn{
-padding:16px 28px;
-border-radius:12px;
-text-decoration:none;
-font-weight:600;
-font-size:1rem;
-transition:.3s;
-}
-
-.email{
-background:#2563eb;
-color:white;
-}
-
-.whatsapp{
-background:#16a34a;
-color:white;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:60px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:#0f172a;
+    background-image:
+    radial-gradient(circle at top right,#1e3a8a 0%,transparent 35%),
+    radial-gradient(circle at bottom left,#0ea5e9 0%,transparent 30%);
+    color:white;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
 }
 
 .card{
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(12px);
-border:1px solid rgba(255,255,255,.1);
-padding:30px;
-border-radius:18px;
+    width:100%;
+    max-width:850px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:24px;
+    padding:60px 30px;
+    text-align:center;
 }
 
-.card h3{
-margin-bottom:15px;
-font-size:1.3rem;
+h1{
+    font-size:clamp(3rem,8vw,5.5rem);
+    font-weight:900;
+    line-height:1;
+    letter-spacing:1px;
+    margin-bottom:30px;
 }
 
-.card p{
-color:#cbd5e1;
-line-height:1.8;
+.subtitle{
+    font-size:1.15rem;
+    color:#cbd5e1;
+    margin-bottom:40px;
+    line-height:1.8;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    padding:16px 28px;
+    border-radius:14px;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.email{
+    background:#2563eb;
+    color:white;
+}
+
+.whatsapp{
+    background:#16a34a;
+    color:white;
 }
 
 .footer{
-text-align:center;
-margin-top:80px;
-padding:30px;
-color:#94a3b8;
-border-top:1px solid rgba(255,255,255,.1);
+    margin-top:50px;
+    color:#94a3b8;
+    font-size:0.9rem;
 }
 
 </style>
@@ -125,26 +94,23 @@ border-top:1px solid rgba(255,255,255,.1);
 
 <body>
 
-<div class="container">
+<div class="card">
 
-<section class="hero">
+<h1>
+MOHD FIKRY FAHMI<br>
+OMAR
+</h1>
 
-<h1>MOHD FIKRY FAHMI BIN OMAR</h1>
-
-<div class="location">
-📍 Bentong, Pahang, Malaysia
+<div class="subtitle">
+Hubungi saya melalui email atau WhatsApp
+untuk sebarang urusan.
 </div>
-
-<p class="tagline">
-Selamat datang ke laman peribadi saya.
-Hubungi saya melalui email atau WhatsApp untuk sebarang urusan.
-</p>
 
 <div class="buttons">
 
 <a class="btn email"
 href="mailto:ff@fikryfahmi.my">
-📧 ff@fikryfahmi.my
+📧 Email
 </a>
 
 <a class="btn whatsapp"
@@ -155,36 +121,8 @@ target="_blank">
 
 </div>
 
-</section>
-
-<section class="cards">
-
-<div class="card">
-<h3>🌐 Website</h3>
-<p>
-Laman rasmi dan pusat maklumat peribadi.
-</p>
-</div>
-
-<div class="card">
-<h3>📧 Email</h3>
-<p>
-Hubungi saya melalui
-ff@fikryfahmi.my
-</p>
-</div>
-
-<div class="card">
-<h3>📱 WhatsApp</h3>
-<p>
-Hubungi terus melalui WhatsApp untuk urusan yang memerlukan maklum balas segera.
-</p>
-</div>
-
-</section>
-
 <div class="footer">
-© 2026 MOHD FIKRY FAHMI BIN OMAR
+ff@fikryfahmi.my
 </div>
 
 </div>
